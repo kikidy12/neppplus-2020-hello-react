@@ -2,20 +2,27 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let logo = 'nepp.png';
+  const text = '언제 끝이 날까?';
+
+  let number = Math.round(100 * 30 / 7).toFixed(1);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {number}<br/>
+          {number}
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://google.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          google search
         </a>
       </header>
     </div>
