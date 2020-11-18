@@ -1,32 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './Hello';
 
 function App() {
 
-  let logo = 'nepp.png';
-  const text = '언제 끝이 날까?';
+  var number = (100+30) * 7 / 7;
 
-  let number = Math.round(100 * 30 / 7).toFixed(1);
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="logo" />
-        <p>
-          {number}<br/>
-          {number}
-        </p>
-        <a
-          className="App-link"
-          href="https://google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          google search
-        </a>
-      </header>
-    </div>
-  );
+  try {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src='https://raw.githubusercontent.com/zio4272/neppplus-2011-hello-react/main/public/2.gif' className='App-logo' alt="logo" />
+          <Hello />
+          <p>
+            <span className='num'>{number}</span>
+          </p>
+          <a
+            className="App-link"
+            href="https://google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            google search
+          </a>
+        </header>
+      </div>
+    );
+  } catch (err) {
+    console.log(err)
+    return
+  }
 }
 
 export default App;

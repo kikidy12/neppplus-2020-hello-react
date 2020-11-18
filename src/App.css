@@ -4,7 +4,6 @@
 
 .App-logo {
   height: 40vmin;
-  background-color: indianred;
   pointer-events: none;
 }
 
@@ -36,4 +35,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+span.num {
+  color: red;
 }
